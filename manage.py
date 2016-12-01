@@ -19,6 +19,7 @@ for i, arg in enumerate(sys.argv):
         os.environ["MEZZANINE_SITE_ID"] = arg.split("=")[1]
         sys.argv.pop(i)
 
+print("sys.path = " + sys.path)
 
 # Run Django.
 if __name__ == "__main__":
